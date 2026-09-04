@@ -1,0 +1,2849 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1309</width>
+    <height>1105</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_19">
+    <item row="0" column="1" rowspan="2">
+     <layout class="QGridLayout" name="gridLayout_41">
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="groupBox_32">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="title">
+         <string>识别诸元</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_26">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_25">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_20">
+             <item row="0" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_89">
+               <item>
+                <widget class="QLabel" name="label_74">
+                 <property name="minimumSize">
+                  <size>
+                   <width>90</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>目标属性</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_TargetAttribute">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_90">
+               <item>
+                <widget class="QLabel" name="label_75">
+                 <property name="minimumSize">
+                  <size>
+                   <width>90</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>目标个数</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_NumberOfTargets">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="2" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_91">
+               <item>
+                <widget class="QLabel" name="label_76">
+                 <property name="minimumSize">
+                  <size>
+                   <width>90</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>目标匹配个数</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_NumberOfTargetMatches">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="3" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_92">
+               <item>
+                <widget class="QLabel" name="label_77">
+                 <property name="minimumSize">
+                  <size>
+                   <width>90</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>激光距离（m）</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_LaserDistance">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <layout class="QVBoxLayout" name="verticalLayout_27">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_93">
+               <item>
+                <widget class="QLabel" name="label_78">
+                 <property name="minimumSize">
+                  <size>
+                   <width>90</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>毫米波1距离（m）</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_MillimeterWaveDistance1">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_94">
+               <item>
+                <widget class="QLabel" name="label_79">
+                 <property name="minimumSize">
+                  <size>
+                   <width>90</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>毫米波2距离（m）</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_MillimeterWaveDistance2">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_95">
+               <item>
+                <widget class="QLabel" name="label_80">
+                 <property name="minimumSize">
+                  <size>
+                   <width>90</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>毫米波3距离（m）</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_MillimeterWaveDistance3">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_97">
+               <item>
+                <widget class="QLabel" name="label_82">
+                 <property name="minimumSize">
+                  <size>
+                   <width>90</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>毫米波4距离（m）</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_MillimeterWaveDistance4">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_98">
+               <item>
+                <widget class="QLabel" name="label_83">
+                 <property name="minimumSize">
+                  <size>
+                   <width>90</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>毫米波5距离（m）</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_MillimeterWaveDistance5">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_28">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="title">
+         <string>敌我识别器</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_28">
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <item>
+              <layout class="QGridLayout" name="gridLayout_24">
+               <item row="3" column="2">
+                <widget class="QComboBox" name="comboBox_7">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>正常</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>故障</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QComboBox" name="comboBox_6">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>正常</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>故障</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QComboBox" name="comboBox_5">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>正常</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>故障</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLabel" name="label_57">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="text">
+                  <string>询问</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QLabel" name="label_58">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="text">
+                  <string>应答</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <spacer name="verticalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_56">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="text">
+                  <string>主机</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <spacer name="verticalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="4" column="1">
+                <spacer name="verticalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QGroupBox" name="groupBox_30">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="title">
+           <string>主机状态</string>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="1" column="0">
+            <layout class="QGridLayout" name="gridLayout_30">
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_6">
+               <item row="0" column="3" colspan="2">
+                <widget class="QLabel" name="label_128">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>密钥组别参数</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_132">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>隐身涂层</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLineEdit" name="lineEdit_ReadTheWorkingStatusOfFriendlyAndEnemyForces">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="4" colspan="2">
+                <widget class="QLineEdit" name="lineEdit_ReadTopMode">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0" colspan="2">
+                <widget class="QLabel" name="label_129">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>敌我工作状态</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QLabel" name="label_130">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>顶部模式</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1" colspan="2">
+                <widget class="QLineEdit" name="lineEdit_ReadStealthCoating">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="5">
+                <widget class="QLineEdit" name="lineEdit_ReadKeyGroupParameters">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QLabel" name="label_84">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>主机</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_dwsbHost">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_85">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>询问</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_dwsbInquiry">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_86">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>应答</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_dwsbAnswer">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="2" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <widget class="QLabel" name="label_87">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>被动8mm波</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_70">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="3" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <item>
+                <widget class="QLabel" name="label_89">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>毫米波告警</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QGridLayout" name="gridLayout_7">
+                 <item row="0" column="0">
+                  <widget class="QLineEdit" name="lineEdit_hmbLeftFront">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>微软雅黑</family>
+                     <pointsize>8</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1" colspan="2">
+                  <widget class="QLineEdit" name="lineEdit_hmbRightFront">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>微软雅黑</family>
+                     <pointsize>8</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0" colspan="2">
+                  <widget class="QLineEdit" name="lineEdit_hmbLeftRear">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>微软雅黑</family>
+                     <pointsize>8</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QLineEdit" name="lineEdit_hmbRightRear">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>微软雅黑</family>
+                     <pointsize>8</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="0">
+            <widget class="QGroupBox" name="groupBox_27">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>微软雅黑</family>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="mouseTracking">
+              <bool>false</bool>
+             </property>
+             <property name="title">
+              <string>任务核心处理机设置（MP-5）</string>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_23">
+              <item row="1" column="0">
+               <layout class="QHBoxLayout" name="horizontalLayout_132">
+                <item>
+                 <widget class="QLabel" name="label_116">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>工作状态</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_setWorkingCondition">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>本次未配置</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>正常</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>特殊</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>检测</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="1">
+               <layout class="QHBoxLayout" name="horizontalLayout_135">
+                <item>
+                 <widget class="QLabel" name="label_119">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>顶部模式</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_setTopMode">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>本次未配置</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>草地模式</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>沙石模式</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>冰雪模式</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>常规模式</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="0" colspan="2">
+               <layout class="QHBoxLayout" name="horizontalLayout_138">
+                <item>
+                 <widget class="QLabel" name="label_122">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>密钥组别</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_KeyGroup">
+                  <property name="minimumSize">
+                   <size>
+                    <width>10</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>本次未配置</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>1</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>密钥状态无效</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QGroupBox" name="groupBox_42">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_16">
+           <item row="1" column="0">
+            <layout class="QGridLayout" name="gridLayout_21">
+             <item row="0" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_47">
+               <item>
+                <widget class="QLabel" name="label_35">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>诸元类型</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_TypesOfElements">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>13</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_48">
+               <item>
+                <widget class="QLabel" name="label_36">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>序号</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_ZhuyuanSerialNumber">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>13</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="2" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_49">
+               <item>
+                <widget class="QLabel" name="label_37">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>批次</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_ZhuyuanBatch">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>13</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="3" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_50">
+               <item>
+                <widget class="QLabel" name="label_38">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>截获时间（H）</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_ZhuyuanInterceptionh">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>13</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_51">
+               <item>
+                <widget class="QLabel" name="label_39">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>截获时间（M）</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_ZhuyuanInterceptionm">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>13</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="5" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_52">
+               <item>
+                <widget class="QLabel" name="label_40">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>截获时间（s）</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_ZhuyuanInterceptions">
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>13</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_46">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="title">
+           <string>应答诸元</string>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_17">
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_53">
+             <item>
+              <widget class="QLabel" name="label_41">
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>8</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>被询问对象ID</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_RecognizerID">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>13</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_54">
+             <item>
+              <widget class="QLabel" name="label_42">
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>8</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>敌我识别提示</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_IdentificationOfFriendOrFoePrompt">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>13</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_55">
+             <item>
+              <widget class="QLabel" name="label_43">
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>8</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>告警提示</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_WarningPrompt">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>13</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>激光告警自检结果设置</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="groupBox_22">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="title">
+            <string>激光告警自检</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout_20">
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>左前</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CircleLineEdit" name="lineEdit_jgLeftFront">
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="1">
+             <layout class="QHBoxLayout" name="horizontalLayout_57">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>右前</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CircleLineEdit" name="lineEdit_jgRightFront">
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout_58">
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>左后</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CircleLineEdit" name="lineEdit_jgLeftRear">
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="1">
+             <layout class="QHBoxLayout" name="horizontalLayout_59">
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>右后</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CircleLineEdit" name="lineEdit_jgRightRear">
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_23">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="title">
+         <string>烟幕弹状态</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QGroupBox" name="groupBox_39">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>微软雅黑</family>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="mouseTracking">
+              <bool>false</bool>
+             </property>
+             <property name="title">
+              <string>FlexRay通信状态</string>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_5">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_15">
+                <item row="0" column="4">
+                 <widget class="QLabel" name="label_19">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>FlexRay B</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="5">
+                 <widget class="CircleLineEdit" name="lineEdit_15">
+                  <property name="minimumSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="CircleLineEdit" name="lineEdit_16">
+                  <property name="minimumSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="6">
+                 <spacer name="horizontalSpacer_19">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="label_20">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>FlexRay A</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <spacer name="horizontalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="0" column="0">
+                 <spacer name="horizontalSpacer_24">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_40">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>微软雅黑</family>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="mouseTracking">
+              <bool>false</bool>
+             </property>
+             <property name="title">
+              <string>烟幕弹状态</string>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="1" column="5">
+               <widget class="QLabel" name="label_26">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>右2</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3">
+               <widget class="CircleLineEdit" name="lineEdit_sl3">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <spacer name="horizontalSpacer_32">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="2" column="7">
+               <widget class="CircleLineEdit" name="lineEdit_sr3">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="7">
+               <widget class="CircleLineEdit" name="lineEdit_sr4">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_21">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>左1</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="CircleLineEdit" name="lineEdit_sl2">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="5">
+               <widget class="QLabel" name="label_25">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>右1</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLabel" name="label_24">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>左4</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="8">
+               <spacer name="horizontalSpacer_26">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="3" column="3">
+               <widget class="CircleLineEdit" name="lineEdit_sl4">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="4">
+               <spacer name="horizontalSpacer_27">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLabel" name="label_22">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>左2</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="7">
+               <widget class="CircleLineEdit" name="lineEdit_sr1">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="5">
+               <widget class="QLabel" name="label_27">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>右3</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="CircleLineEdit" name="lineEdit_sl1">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="7">
+               <widget class="CircleLineEdit" name="lineEdit_sr2">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLabel" name="label_23">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>左3</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <spacer name="horizontalSpacer_25">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="3" column="5">
+               <widget class="QLabel" name="label_28">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>右4</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="6">
+               <spacer name="horizontalSpacer_33">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="1">
+          <widget class="QGroupBox" name="groupBox_41">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>13</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="title">
+            <string>告警诸元</string>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_14">
+              <item row="2" column="0">
+               <layout class="QHBoxLayout" name="horizontalLayout_44">
+                <item>
+                 <widget class="QLabel" name="label_33">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>规避方位</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_22">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_DriverAvoidDirection"/>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="0">
+               <layout class="QHBoxLayout" name="horizontalLayout_40">
+                <item>
+                 <widget class="QLabel" name="label_29">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>告警类型</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_AlarmType">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>13</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <layout class="QHBoxLayout" name="horizontalLayout_41">
+                <item>
+                 <widget class="QLabel" name="label_30">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>告警角度</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_6">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_AlarmDirection">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>13</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QtMaterialFlatButton" name="pushButton_close">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1309</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string/>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CircleLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>circlelineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QtMaterialFlatButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">qtmaterialflatbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
