@@ -37,41 +37,36 @@ QGroupBox::title {
    ================================================================ */
 
 /* --- 激光告警组 (蓝色 #2980b9) --- */
-QGroupBox#groupBox_2,
-QGroupBox#groupBox_13,
-QGroupBox#groupBox_22 {
+QGroupBox#groupBox_22{
     border-left: 4px solid #2980b9;
 }
-QGroupBox#groupBox_2 QGroupBox::title,
-QGroupBox#groupBox_2 > QGroupBox::title,
-QGroupBox#groupBox_13 > QGroupBox::title,
-QGroupBox#groupBox_22 > QGroupBox::title {
+
+QGroupBox#groupBox_22 > QGroupBox::title{
     background-color: #2980b9;
 }
 
 /* --- 毫米波雷达 / 烟幕弹 / FlexRay通信 (绿色 #27ae60) --- */
-QGroupBox#groupBox_23,
 QGroupBox#groupBox_39 {
     border-left: 4px solid #27ae60;
 }
-QGroupBox#groupBox_23 > QGroupBox::title,
+
 QGroupBox#groupBox_39 > QGroupBox::title {
     background-color: #27ae60;
 }
 
 /* --- 敌我识别器 (深蓝灰 #2c3e50) --- */
-QGroupBox#groupBox_28 {
+QGroupBox#groupBox_41 {
     border-left: 4px solid #2c3e50;
 }
-QGroupBox#groupBox_28 > QGroupBox::title {
+QGroupBox#groupBox_41 > QGroupBox::title {
     background-color: #2c3e50;
 }
 
 /* --- 被动8mm波干扰组件 (紫色 #8e44ad) --- */
-QGroupBox#groupBox_29 {
+QGroupBox#groupBox_40 {
     border-left: 4px solid #8e44ad;
 }
-QGroupBox#groupBox_29 > QGroupBox::title {
+QGroupBox#groupBox_40 > QGroupBox::title {
     background-color: #8e44ad;
 }
 

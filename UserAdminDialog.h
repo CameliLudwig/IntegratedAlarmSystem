@@ -6,7 +6,6 @@
 #include <QHash>
 #include <QIcon>
 #include <QSize>
-#include "mainwindow.h"
 
 namespace Ui { class UserAdminDialog; }
 
@@ -74,7 +73,6 @@ private:
     void applySmallMode();   // 切换到小卡片模式
     void applyLargeMode();   // 切换到大卡片模式
 
-    MainWindow* m_main = nullptr;
 };
 
 #endif // USERADMINDIALOG_H

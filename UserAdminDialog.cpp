@@ -411,10 +411,7 @@ void UserAdminDialog::doLogin()
     m_currentUser = user;
     rememberLastUser(user);
 
-    // 登录成功，显示主窗口并关闭自己
-    m_main = new MainWindow();
-    m_main->show(); // 或者 m_main->showFullScreen();
-    this->accept(); // 使用 accept 稍微优雅一点，虽然 close 也可以
+    accept();
 }
 
 void UserAdminDialog::doChangePassword()

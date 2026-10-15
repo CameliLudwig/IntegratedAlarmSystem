@@ -4,45 +4,39 @@
 #include "UserAdminDialog.h"
 #include "TestSelectionDialog.h"
 #include "mainwindow.h"
-#include "threadnaming.h"
+// #include "threadnaming.h"
 
 int main(int argc, char *argv[])
 {
-    ThreadNaming::setCurrentThreadName(L"Main Thread");
+    // ThreadNaming::setCurrentThreadName(L"Main Thread");
     QApplication a(argc, argv);
+    bool exitApplication = false;
 
-    MainWindow mainWin;
-
-    while (true) {
+    while (!exitApplication) {
         UserAdminDialog loginDlg;
         if (loginDlg.exec() != QDialog::Accepted)
             break;
-        QString userName = loginDlg.currentUser();
 
-        bool backToLogin = false;
-        while (!backToLogin) {
-            // TestSelectionDialog testDlg(userName);
-            // int result = testDlg.exec();
-            // if (result != QDialog::Accepted) {
-            //     backToLogin = true;
-            //     continue;
-            // }
+        MainWindow mainWin;
+        mainWin.showMaximized();
+        mainWin.startFlexRayConnection();
 
-            // mainWin.setTestMode(testDlg.selectedMode());
-            mainWin.showMaximized();
+        QEventLoop waitLoop;
+        QMetaObject::Connection returnConnection = QObject::connect(
+            &mainWin, &MainWindow::returnToSelection,
+            &waitLoop, &QEventLoop::quit);
+        QMetaObject::Connection exitConnection = QObject::connect(
+            &mainWin, &MainWindow::exitApplication,
+            [&waitLoop, &exitApplication]() {
+                exitApplication = true;
+                waitLoop.quit();
+            });
+        waitLoop.exec();
+        QObject::disconnect(returnConnection);
+        QObject::disconnect(exitConnection);
 
-            QEventLoop waitLoop;
-            QObject::connect(&mainWin, &MainWindow::returnToSelection,
-                             &waitLoop, &QEventLoop::quit);
-            waitLoop.exec();
-            QObject::disconnect(&mainWin, &MainWindow::returnToSelection,
-                                &waitLoop, &QEventLoop::quit);
-
-            mainWin.hide();
-            QApplication::processEvents();
-        }
+        mainWin.closeAllDevices();
     }
 
-    mainWin.closeAllDevices();
     return 0;
 }

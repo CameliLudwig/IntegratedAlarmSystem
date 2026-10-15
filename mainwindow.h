@@ -8,6 +8,7 @@
 #include <QDateTime>
 #include <QMessageBox>
 #include <QFileInfo>
+#include <QFuture>
 #include <QtConcurrent/QtConcurrent>
 
 #include "flexraythread.h"
@@ -15,6 +16,8 @@
 #include "qtmaterialflatbutton.h"
 #include "applogger.h"
 #include "TestSelectionDialog.h"
+#include "gaugeCompass.h"
+#include "pdfreportgenerator.h"
 
 namespace Ui {
 class MainWindow;
@@ -29,14 +32,20 @@ public:
     ~MainWindow();
 
     void setTestMode(TestSelectionDialog::TestMode mode);
+    void startFlexRayConnection();
     void closeAllDevices();
+
+    // 生成会话PDF报告
+    QString generateSessionPDF();
 
 protected:
     void closeEvent(QCloseEvent *event) override;
 
 signals:
     void returnToSelection();
-    void flexSend(QVector<uint16> rcvData_MP5, QVector<uint16> rcvData_WP1, QVector<uint16> rcvData_WP4);
+    void exitApplication();
+    // void flexSend(QVector<uint16> rcvData_MP5, QVector<uint16> rcvData_WP1, QVector<uint16> rcvData_WP4);
+    void flexSend(QVector<uint16> masterData, QVector<uint16> driveData);
 
 public slots:
     void show_data(QVector<uint16> rcvData, int channel);
@@ -50,17 +59,31 @@ private slots:
 private:
     void applyVisibilityForMode();
     void generateModePDF();
+    void initFlexRayConnections();
+    void initDevices();
+    void setAlarmWindows(int tmp1, int tmp2, QString mes1, QString mes2);
 
     Ui::MainWindow *ui;
 
-    FlexRayThread *m_Flexthread = nullptr;
+    // FlexRayThread *m_Flexthread = nullptr;
     TestSelectionDialog::TestMode m_testMode = TestSelectionDialog::ModeNone;
 
     uint8_t m_cnt_SelfCheck = 0;
     QtMaterialFlatButton *pushButton_selfcheck = nullptr;
     QLineEdit *lineEdit_self = nullptr;
 
-    QVector<double> m_TemprcvData4 = {0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF};
+    // FlexRay worker thread
+    QThread *m_flexRayWorkerThread = nullptr;
+    FlexRayThread *m_flexRayThread = nullptr; // 启动任务 future （用于后台执行 startFlexRayOperation），保留以检查后台启动完成
+    // FlexRay timers（由 MainWindow 管理）
+    QTimer *m_flexray_reconnect_timer = nullptr;  // 3s 重连尝试
+    QFuture<void> m_flexray_start_future;
+    // Guard to prevent reentrant start requests from timers
+    std::atomic<bool> m_flexStartInProgress{false};
+
+    QVector<double> m_TemprcvData1 = {0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF};
+    QVector<uint16> m_TemprcvData4 = {0xFFFF, 0xFFFF};
+    QVector<double> m_TemprcvData5 = {0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF};
 
     QDateTime m_sessionStartTime;
     QString m_currentUser;
@@ -68,6 +91,12 @@ private:
     bool m_abNodeAOk = false;
     bool m_abNodeBOk = false;
     bool m_returning = false;
+    bool m_flexRayStartRequested = false;
+    std::atomic<bool> m_flexRayStartCancelled{false};
+    QFuture<void> m_flexRayStartupFuture;
+
+    GaugeCompass *gaugeCompass_ = nullptr;
+    bool startTest_ = false;
 };
 
 #endif // MAINWINDOW_H

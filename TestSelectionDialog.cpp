@@ -12,8 +12,8 @@ TestSelectionDialog::TestSelectionDialog(const QString &userName, QWidget *paren
     , m_selectedMode(ModeNone)
     , m_userName(userName)
 {
-    setupUI();
-    applyStyle();
+    //setupUI();
+    //applyStyle();
 }
 
 TestSelectionDialog::~TestSelectionDialog() {}
